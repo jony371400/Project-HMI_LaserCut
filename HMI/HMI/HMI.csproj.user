@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\LogPages\LogPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CncPages\CncPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CraftPages\CraftPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DataViewPages\DataViewPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\EquipmentPages\EquipmentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\HomePages\HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LoadingPages\LoadingPage1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LoadingPages\LoadingPage2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LoadingPages\LoadingPage3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MachineParaPages\MachineParaPage1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MachineParaPages\MachineParaPage2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\OffsetPages\OffsetPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ProcessZinePages\ProcessZonePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UnLoadingPages\UnLoadingPage1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UnLoadingPages\UnLoadingPage2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UnlockPages\UnlockPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\LogPages\LogPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CncPages\CncPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CraftPages\CraftPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DataViewPages\DataViewPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\EquipmentPages\EquipmentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HomePages\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoadingPages\LoadingPage1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoadingPages\LoadingPage2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoadingPages\LoadingPage3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MachineParaPages\MachineParaPage1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MachineParaPages\MachineParaPage2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\OffsetPages\OffsetPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ProcessZinePages\ProcessZonePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UnLoadingPages\UnLoadingPage1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UnLoadingPages\UnLoadingPage2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UnlockPages\UnlockPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

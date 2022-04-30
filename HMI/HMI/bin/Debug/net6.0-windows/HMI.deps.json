@@ -1,0 +1,109 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HMI/1.0.0": {
+        "dependencies": {
+          "BeckhoffController": "1.0.0.0",
+          "ControllerBase": "1.0.0.0",
+          "MaterialDesignColors": "1.2.6.1479",
+          "MaterialDesignThemes.Wpf": "3.2.0.1479",
+          "TwinCAT.Ads": "4.1.31.0",
+          "WpfParts": "1.0.0.0"
+        },
+        "runtime": {
+          "HMI.dll": {}
+        }
+      },
+      "BeckhoffController/1.0.0.0": {
+        "runtime": {
+          "BeckhoffController.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ControllerBase/1.0.0.0": {
+        "runtime": {
+          "ControllerBase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MaterialDesignColors/1.2.6.1479": {
+        "runtime": {
+          "MaterialDesignColors.dll": {
+            "assemblyVersion": "1.2.6.1479",
+            "fileVersion": "1.2.6.1479"
+          }
+        }
+      },
+      "MaterialDesignThemes.Wpf/3.2.0.1479": {
+        "runtime": {
+          "MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "3.2.0.1479",
+            "fileVersion": "3.2.0.1479"
+          }
+        }
+      },
+      "TwinCAT.Ads/4.1.31.0": {
+        "runtime": {
+          "TwinCAT.Ads.dll": {
+            "assemblyVersion": "4.1.31.0",
+            "fileVersion": "4.1.31.0"
+          }
+        }
+      },
+      "WpfParts/1.0.0.0": {
+        "runtime": {
+          "WpfParts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HMI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BeckhoffController/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ControllerBase/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MaterialDesignColors/1.2.6.1479": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MaterialDesignThemes.Wpf/3.2.0.1479": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TwinCAT.Ads/4.1.31.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfParts/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

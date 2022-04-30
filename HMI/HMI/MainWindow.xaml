@@ -1,0 +1,150 @@
+﻿<Window x:Class="HMI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HMI"
+        mc:Ignorable="d"         
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"         
+        xmlns:WpfParts="clr-namespace:WpfParts;assembly=WpfParts"
+        
+        Title="Human Machine Interface" Height="1200" Width="1440">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Grey.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="1200*"/>
+            <ColumnDefinition Width="120*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="1000*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+
+        <!--Status Dashboard-->
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1" Background="White">
+            
+        </Grid>
+
+        <!--Page Zone-->
+        <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button Name="Btn_CncPage" Content="CncPage" Click="Page_Click" Grid.Row="0" Height="90" Margin="5"></Button>
+            <Button Name="Btn_OffsetPage" Content="OffsetPage" Click="Page_Click" Grid.Row="1"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_CraftPage" Content="CraftPage" Click="Page_Click" Grid.Row="2" Height="90" Margin="5"></Button>
+            <Button Name="Btn_ProcessZonePage" Content="ProcessZonePage" Click="Page_Click" Grid.Row="3" Height="90" Margin="5"></Button>
+            <Button Name="Btn_LoadingPage" Content="LoadingPage" Click="Page_Click" Grid.Row="4" Height="90" Margin="5"></Button>
+            <Button Name="Btn_UnLoadingPage" Content="UnLoadingPage" Click="Page_Click" Grid.Row="5" Height="90" Margin="5"></Button>
+            <Button Name="Btn_EquipmentPage" Content="EquipmentPage" Click="Page_Click" Grid.Row="6" Height="90" Margin="5"></Button>
+            <Button Name="Btn_UnlockPage" Content="UnlockPage" Click="Page_Click" Grid.Row="7" Height="90" Margin="5"></Button>
+            <Button Name="Btn_MachineParaPage" Content="MachinePage" Click="Page_Click" Grid.Row="8" Height="90" Margin="5"></Button>
+            <Button Name="Btn_LogPage" Content="LogPage" Click="Page_Click" Grid.Row="9" Height="90" Margin="5"></Button>
+        </Grid>
+
+        <!--Function Zone-->
+        <Grid Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button Name="Btn_HomePage" Content="HomePage" Click="Page_Click" Grid.Row="0" Height="90" Margin="5"></Button>
+            <Button Name="Btn_SingleFunc" Content="Single" Click="Function_Click" Grid.Row="1" Height="90" Margin="5"></Button>
+            <Button Name="Btn_ScrapFunc" Content="Scrap" Click="Function_Click" Grid.Row="2" Height="90" Margin="5"></Button>
+            <Button Name="Btn_DustFunc" Content="Dust" Click="Function_Click" Grid.Row="3" Height="90" Margin="5"></Button>
+            <Button Name="Btn_LoadingAutoFunc" Content="Loading Auto" Click="Function_Click" Grid.Row="4" Height="90" Margin="5"></Button>
+            <Button Name="Btn_MotorFunc" Content="Motor" Click="Function_Click" Grid.Row="5" Height="90" Margin="5"></Button>
+            <Button Name="Btn_Func1" Content="--" Click="Function_Click" Grid.Row="6" Height="90" Margin="5"></Button>
+            <Button Name="Btn_Func2" Content="--" Click="Function_Click" Grid.Row="7" Height="90" Margin="5"></Button>
+            <Button Name="Btn_Func3" Content="--" Click="Function_Click" Grid.Row="8" Height="90" Margin="5"></Button>
+            <Button Name="Btn_Func4" Content="--" Click="Function_Click" Grid.Row="9" Height="90" Margin="5"></Button>
+        </Grid>
+
+        <!--Control Zone-->
+        <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="1" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="Btn_Auto" Content="Auto" Click="Control_Click" Grid.Column="0"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Mannul" Content="Mannul" Click="Control_Click" Grid.Column="1"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_MDI" Content="MDI" Click="Control_Click" Grid.Column="2" Height="90" Margin="5" ></Button>
+            <Button Name="Btn_Start" Content="Start" Click="Control_Click" Grid.Column="3"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Stop" Content="Stop" Click="Control_Click" Grid.Column="4"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Reset" Content="Reset" Click="Control_Click" Grid.Column="5"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_AlarmReset" Content="Alarm Reset" Click="Control_Click" Grid.Column="6"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Control1" Content="--" Click="Control_Click" Grid.Column="7"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Control2" Content="--" Click="Control_Click" Grid.Column="8"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Control3" Content="--" Click="Control_Click" Grid.Column="9"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Control4" Content="--" Click="Control_Click" Grid.Column="10"  Height="90" Margin="5"></Button>
+            <Button Name="Btn_Save" Content="Save" Click="Control_Click" Grid.Column="11"  Height="90" Margin="5"></Button>
+        </Grid>
+
+        <!--Pages-->
+        <local:HomePage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:HomePage>
+        <local:CncPage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:CncPage>
+        <local:CraftPage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:CraftPage>
+        <local:DataViewPage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:DataViewPage>
+        <local:EquipmentPage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:EquipmentPage>
+        <local:LoadingPage1 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:LoadingPage1>
+        <local:LoadingPage2 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:LoadingPage2>
+        <local:LoadingPage3 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:LoadingPage3>
+        <local:MachineParaPage1 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:MachineParaPage1>
+        <local:MachineParaPage2 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:MachineParaPage2>
+        <local:OffsetPage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:OffsetPage>
+        <local:ProcessZonePage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:ProcessZonePage>
+        <local:UnLoadingPage1 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:UnLoadingPage1>
+        <local:UnLoadingPage2 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:UnLoadingPage2>
+        <local:UnlockPage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:UnlockPage>
+        <local:LogPage Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1" Margin="5"></local:LogPage>
+
+        <!--<WpfParts:NumericInputStyle2 Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="1"
+                                     FontSize="{Binding FS}" Name="Btn_TubeShape_W"  Range1="20" Range2="150"  Cursor="Hand" 
+                                     NumType="Decimal" Stroke="Black" OnlyRead="False" IsEnableRange="True" NumFormat="0.0" />-->
+
+    </Grid>
+</Window>

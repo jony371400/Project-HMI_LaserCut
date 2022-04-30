@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="BeckhoffController">
+      <HintPath>..\DLL\BeckhoffController.dll</HintPath>
+    </Reference>
+    <Reference Include="ControllerBase">
+      <HintPath>..\DLL\ControllerBase.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors">
+      <HintPath>..\DLL\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf">
+      <HintPath>..\DLL\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="TwinCAT.Ads">
+      <HintPath>..\DLL\TwinCAT.Ads.dll</HintPath>
+    </Reference>
+    <Reference Include="WpfParts">
+      <HintPath>..\DLL\WpfParts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
